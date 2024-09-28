@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #001e4d;
+    animation: backgroundAnimation 50s infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% { background-color: #001e4d; }
+    2% { background-color: #ff6f61; }
+    4% { background-color: #6b5b95; }
+    6% { background-color: #88b04b; }
+    8% { background-color: #f7cac9; }
+    10% { background-color: #92a8d1; }
+    12% { background-color: #955251; }
+    14% { background-color: #b565a7; }
+    16% { background-color: #009688; }
+    18% { background-color: #f7cac9; }
+    20% { background-color: #d65076; }
+    22% { background-color: #45b8ac; }
+    24% { background-color: #e1b378; }
+    26% { background-color: #6b5b95; }
+    28% { background-color: #dd4124; }
+    30% { background-color: #9b2335; }
+    32% { background-color: #5a5b9f; }
+    34% { background-color: #ffbf00; }
+    36% { background-color: #d65076; }
+    38% { background-color: #6b5b95; }
+    40% { background-color: #9b2335; }
+    42% { background-color: #e1b378; }
+    44% { background-color: #45b8ac; }
+    46% { background-color: #dd4124; }
+    48% { background-color: #f7cac9; }
+    50% { background-color: #88b04b; }
+    52% { background-color: #92a8d1; }
+    54% { background-color: #009688; }
+    56% { background-color: #b565a7; }
+    58% { background-color: #ff6f61; }
+    60% { background-color: #001e4d; }
+    62% { background-color: #6b5b95; }
+    64% { background-color: #d65076; }
+    66% { background-color: #009688; }
+    68% { background-color: #e1b378; }
+    70% { background-color: #9b2335; }
+    72% { background-color: #45b8ac; }
+    74% { background-color: #ffbf00; }
+    76% { background-color: #92a8d1; }
+    78% { background-color: #88b04b; }
+    80% { background-color: #f7cac9; }
+    82% { background-color: #b565a7; }
+    84% { background-color: #001e4d; }
+    86% { background-color: #dd4124; }
+    88% { background-color: #009688; }
+    90% { background-color: #6b5b95; }
+    92% { background-color: #ff6f61; }
+    94% { background-color: #d65076; }
+    96% { background-color: #9b2335; }
+    98% { background-color: #001e4d; }
+    100% { background-color: #88b04b; }
+}
+
+.app {
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto 0; 
+    border-radius: 10px;
+    padding: 30px;
+}
+
+
+.app h1 {
+    font-size: 25px;
+    color: #001e4d;
+    border-bottom: 3px solid #333;
+    padding-bottom: 30px;
+}
+
+.quiz {
+    padding: 20px 0;
+}
+
+.quiz h2 {
+    font-size: 18px;
+    color: #001e4d;
+}
+
+.btn {
+    background: #fff;
+    color: #222;
+    font-weight: 700;
+    font-size: 17px;
+    width: 100%;
+    border: 2px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover:not([disabled]) {
+    background: #222;
+    color: #fff;
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+}
+
+#next-btn {
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    font-size: 20px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+#next-btn:hover {
+    background: #055623;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.correct {
+    background: #9aeabc;
+}
+
+.incorrect {
+    background: #ff9393;
+}
+
+.progress-bar {
+    background: #e0e0e0;
+    border-radius: 5px;
+    height: 10px;
+    width: 100%;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: #a00202;
+    transition: width 0.3s ease;
+}
